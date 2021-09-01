@@ -1,7 +1,11 @@
 <template>
-  <Tutorial/>
+  <div>
+    <Tutorial/>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  layout: "default" // add "shop" and check
+}
 </script>
