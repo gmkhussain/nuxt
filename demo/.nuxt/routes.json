@@ -1,9 +1,16 @@
 [
   {
+    "name": "about",
+    "path": "/about",
+    "component": "F:\\\\xampp-7.3\\\\htdocs\\\\projects\\\\_rd\\\\nuxt\\\\demo\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_be660924"
+  },
+  {
     "name": "index",
     "path": "/",
-    "component": "F:\\\\xampp-7.3\\\\htdocs\\\\projects\\\\_rd\\\\v\\\\nuxt\\\\demo\\\\pages\\\\index.vue",
+    "component": "F:\\\\xampp-7.3\\\\htdocs\\\\projects\\\\_rd\\\\nuxt\\\\demo\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_3c7e3f7b"
+    "_name": "_7ef6539a"
   }
 ]

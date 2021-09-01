@@ -1,5 +1,6 @@
 <template>
     <div>
+        <nuxt-link to="/about">About</nuxt-link>
         <h4>{{pageTitle}}</h4>
     </div>
 </template>
