@@ -29,7 +29,7 @@
           <img :src="`https://image.tmdb.org/t/p/w500/${movie.poster_path}`" />
         </div>
         <h4>{{movie.original_title}}</h4>
-        <NuxtLink :to="{ name: 'movies-movieid', params: { movieid: movie.id }  }">View more info</NuxtLink>
+        <NuxtLink :to="{ name: 'movies-id', params: { id: movie.id }  }">View more info</NuxtLink>
       </div>
     </div>
 
