@@ -6,12 +6,14 @@
         <p>Title: {{post.title}}</p>
         
         <button @click="showContext" >Click Me {{result}}</button>
+
+        <div v-if="$nuxt.isOffline">You are offline</div>
+        <div v-else>You online</div>
     </div>
 </template>
 
 
 <script>
-
 export default {
   data() {
     return {
