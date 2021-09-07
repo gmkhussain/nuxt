@@ -2,6 +2,7 @@
   <div>
     <div>{{ content }}</div>
     <button @click="refresh">Refresh</button>
+
   </div>
 </template>
 
