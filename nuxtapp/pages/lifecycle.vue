@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div >
+        <div v-if="loading" class="loading-page">Loading</div>
         <h4>Lifecycle</h4>
 
 <h5>Server</h5>
@@ -79,6 +80,11 @@ This part of the lifecycle is fully executed in the browser, no matter which Nux
 
 <script>
 export default {
+    
+    data: () => ({
+      loading: true
+    }),
+ 
     asyncData() {
       console.log("--> asyncData()")
     },
@@ -93,6 +99,10 @@ export default {
     },
     mounted() {
       console.log("--> mounted()")
+
+      
+      setTimeout(() => this.loading = false, 2000)
+      
     }
 }
 </script>

@@ -45,6 +45,10 @@ export default {
     },
     methods: {
       urlQueryChangeFunc() {
+
+        this.$nuxt.$loading.start()
+        setTimeout(() => this.$nuxt.$loading.finish(), 500)
+
         console.log("urlQueryChangeFunc()")
         
         function getRandomInt(max) {
