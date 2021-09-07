@@ -9,6 +9,10 @@
     
             </ul>
         </div>
+
+        <h4>Listening to query string changes</h4>
+        <button @click="urlQueryChangeFunc">urlQueryChangeFunc</button>
+
     </div>
 </template>
 
@@ -33,6 +37,23 @@ export default {
         this.posts = await fetch('https://api.nuxtjs.dev/posts').then(res =>
         res.json()
       )
+    },
+    watch: {
+      '$route.query'() {
+        console.log("query changed")
+      }
+    },
+    methods: {
+      urlQueryChangeFunc() {
+        console.log("urlQueryChangeFunc()")
+        
+        function getRandomInt(max) {
+          return Math.floor(Math.random() * max);
+        }
+        let randomNum = getRandomInt(2);
+
+        this.$router.push({ path: '/datafetching', query: {param1: "static_value", param2: randomNum }})
+      }
     }
   }
 
