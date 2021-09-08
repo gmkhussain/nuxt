@@ -1,6 +1,12 @@
 <template>
     <div>
         <h4>About</h4>
+        <br>
+        <br>
+        
+        <LazyFasty v-if="show" />
+        <button v-if="!show" @click="show = true">Show LazyFasty</button>
+
     </div>
 </template>
 
@@ -8,7 +14,8 @@
 export default {
     data() {
         return {
-            title: "About Us"
+            title: "About Us",
+            show: false
         }
     },
     head() {

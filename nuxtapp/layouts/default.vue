@@ -1,7 +1,7 @@
 <template>
     <div class="app">
         <Header />
-        <Nuxt keep-alive :nuxt-child-key="someKey" />
+        <Nuxt keep-alive />
         <Footer />
     </div>
 </template>
