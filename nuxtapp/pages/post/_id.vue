@@ -23,12 +23,13 @@ export default {
   methods: {
     showContext(context) {
       console.log("Element", context)
+      
       this.result = "Check console"
       // We can see body context too on body load on etc event..
     }
   }, 
     async asyncData({params, $axios}) { 
-   
+      
       const post = await $axios.$get(`https://api.nuxtjs.dev/posts/${params.id}`)
       console.log(post)
       return { post }

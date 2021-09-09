@@ -62,6 +62,9 @@ export default {
   },
   serverMiddleware: [
     '~/server-middleware/logger.js'
+  ],
+  middleware: [
+    '~/server-middleware/user-agent.js'
   ]
   
 }
