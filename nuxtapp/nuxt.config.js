@@ -48,6 +48,9 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxt/content',
+    // Relative to your project srcDir
+    ['~/modules/mymodule', { token: '123' }]
+    
   ],
 
   content: {

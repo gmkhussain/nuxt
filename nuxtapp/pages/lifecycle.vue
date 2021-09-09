@@ -79,6 +79,8 @@ This part of the lifecycle is fully executed in the browser, no matter which Nux
 </template>
 
 <script>
+import mymodule from 'mymodule';
+
 export default {
     
     data: () => ({
@@ -86,7 +88,10 @@ export default {
     }),
  
     asyncData() {
-      console.log("--> asyncData()")
+        
+        console.log("AAAAAAA", mymodule)
+        console.log("--> asyncData()")
+
     },
     beforeCreate(){
       console.log("--> beforeCreate()")

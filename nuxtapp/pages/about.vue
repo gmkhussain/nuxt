@@ -11,8 +11,10 @@
 </template>
 
 <script>
+import mymodule from 'mymodule'
+
 export default {
-    middleware: 'authenticated',
+    // middleware: 'authenticated',
   
     data() {
         return {
