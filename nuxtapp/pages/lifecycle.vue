@@ -88,12 +88,11 @@ export default {
     }),
  
     asyncData() {
-        
         console.log("AAAAAAA", mymodule)
         console.log("--> asyncData()")
-
     },
     beforeCreate(){
+        this.$_multi(4)
       console.log("--> beforeCreate()")
     },
     created(){

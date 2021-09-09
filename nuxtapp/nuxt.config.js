@@ -28,7 +28,10 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/preview.client.js'],
+  plugins: [
+    '~/plugins/preview.client.js',
+    '~/plugins/myplugin'
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   // components: true,
