@@ -31,7 +31,13 @@ export default {
   plugins: ['~/plugins/preview.client.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  // components: true,
+  components: {
+    dirs: [
+      '~/components',
+      '~/pages/nestedfolder'
+    ]
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [

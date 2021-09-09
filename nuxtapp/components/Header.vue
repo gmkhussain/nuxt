@@ -12,7 +12,8 @@
      
      <NuxtLink to="/datafetching">datafetching</NuxtLink>
      <NuxtLink to="/process_helper">process_helper Path</NuxtLink>
-
+     <NuxtLink to="/nestedfolder/nestedfolder">nestedfolder</NuxtLink>
+||
      <a href="https://nuxtjs.org">Use A Tag for External Link</a>
    </div>
   </header>
